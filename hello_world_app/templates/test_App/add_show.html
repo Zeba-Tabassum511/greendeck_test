@@ -1,0 +1,18 @@
+{%extends 'test_app/base.html'%}
+{%block content %}
+<div>
+    <div class="content mt-3">
+        <h4 class="text-center alert-info">Add New Data</h4>
+        <form action="" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <input type="submit" class="btn btn-success" value="ADD">
+            <a href="{% url 'add_show' %}" class="btn btn-warning btn sm">All Data</a>
+
+        
+
+        </form>
+    </div>
+
+{%endblock content %}
+    
